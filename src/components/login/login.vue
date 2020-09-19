@@ -44,7 +44,9 @@ export default {
     },
     methods: {
         // 登录发送请求
+
          login() {
+             console.log(2321321)
             this.$router.push('/home')
         }
     }
