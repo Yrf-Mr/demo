@@ -13,6 +13,7 @@
                     type="text"
                     v-model="loginObj.username"
                     autocomplete="off"
+
                 ></el-input>
             </el-form-item>
             <el-form-item label="密码">
