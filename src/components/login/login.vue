@@ -46,7 +46,7 @@ export default {
         // 登录发送请求
 
         login() {
-            console.log(2321321)
+            console.log("我小时候")
             this.$router.push('/home')
         }
     }
