@@ -1,42 +1,39 @@
 <template>
-  <el-container>
-    <el-header>
-      <Top/>
-    </el-header>
     <el-container>
-      <el-aside width="200px">
-        <Left/>
-      </el-aside>
-      <el-main>
-        <router-view></router-view>
-      </el-main>
+        <el-header>
+            <Top/>
+        </el-header>
+        <el-container>
+            <el-aside width="200px">
+                <Left/>
+            </el-aside>
+            <el-main>
+                <router-view></router-view>
+            </el-main>
+        </el-container>
     </el-container>
-  </el-container>
 </template>
 <script>
 import Top from "../top/top.vue";
 import Left from "../left/left.vue";
+
 export default {
-  components: {
-    Top,
-    Left
-  },
-  created() {
-    var token = window.localStorage.getItem("token");
-    if (!token) {
-      this.$router.push({ name: "login" });
+    components: {
+        Top,
+        Left
+    },
+    created() {
+
     }
-    // 给所有的 axios 请求设置请求头：
-    this.$http.defaults.headers.common["Authorization"] = token;
-  }
 };
 </script>
 
 <style scoped>
 .el-container {
-  height: 100%;
+    height: 100%;
 }
+
 .el-main {
-  padding: 0;
+    padding: 0;
 }
 </style>
