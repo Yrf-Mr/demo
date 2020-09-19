@@ -17,6 +17,7 @@
             </el-form-item>
             <el-form-item label="密码">
                 <el-input
+
                     type="password"
                     v-model="loginObj.password"
                     autocomplete="off"
