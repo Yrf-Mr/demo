@@ -47,7 +47,7 @@ export default {
     methods: {
         // 登录发送请求
         login: function () {
-            console.log(9999, "你好，版本2")
+            console.log(9999, "你好，版本3")
             this.$router.push('/home')
         }
     }
