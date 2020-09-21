@@ -47,7 +47,7 @@ export default {
     methods: {
         // 登录发送请求
         login: function () {
-            console.log(9999, "你好，我要提叫")
+            console.log(9999, "你好，sss")
             this.$router.push('/home')
         }
     }
