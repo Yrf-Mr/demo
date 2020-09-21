@@ -46,8 +46,8 @@ export default {
     },
     methods: {
         // 登录发送请求
-        login() {
-            console.log(9999 ,"你好")
+        login: function () {
+            console.log(9999, "你好")
             this.$router.push('/home')
         }
     }
